@@ -8,6 +8,8 @@
 
 :negative_squared_cross_mark: Creating card model
 
+:negative_squared_cross_mark: Organization and practicality
+
 ## Anki add-on
 
 ...
