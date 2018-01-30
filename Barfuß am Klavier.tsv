@@ -1,42 +1,42 @@
-order	comment	chord	lyric	last_comment	last_chord	last_lyric
-0	> Intro: 	Am F C				
-1	- Chorus:	Am   F           C	Ich sitze schon wieder	> Intro: 	Am F C	
-2		Am  F         C	Barfuß am Klavier	- Chorus:	Am   F           C	Ich sitze schon wieder
-3		Am          F      C	Ich träume Liebeslieder		Am  F         C	Barfuß am Klavier
-4		                          Am  F  C	und sing dabei von dir		Am          F      C	Ich träume Liebeslieder
-5	- Verse:	Dm	Du und ich,		                          Am  F  C	und sing dabei von dir
-6		                    C	wir waren wunderlich	- Verse:	Dm	Du und ich,
-7		           F	Nicht für mich		                    C	wir waren wunderlich
-8		                 Em	für die, die es störte		           F	Nicht für mich
-9		                     F	wenn man uns nachts hörte		                 Em	für die, die es störte
-10		             C                        F	Ich hab mit dir gemeinsam einsam rumgesessen und geschwiegen		                     F	wenn man uns nachts hörte
-11		     Em                             F	ich erinnere mich am besten ans gemeinsam einsam liegen		             C                        F	Ich hab mit dir gemeinsam einsam rumgesessen und geschwiegen
-12		       C	jeden morgen		     Em                             F	ich erinnere mich am besten ans gemeinsam einsam liegen
-13		     F	danach bei dir		       C	jeden morgen
-14		Em                      F	   du nackt im bett und ich barfuß am Klavier		     F	danach bei dir
-15	- Chorus:	Am   F           C	Ich sitze schon wieder		Em                      F	   du nackt im bett und ich barfuß am Klavier
-16		Am  F         C	Barfuß am Klavier	- Chorus:	Am   F           C	Ich sitze schon wieder
-17		Am          F      C	Ich träume Liebeslieder		Am  F         C	Barfuß am Klavier
-18		                          Am  F  C	und sing dabei von dir		Am          F      C	Ich träume Liebeslieder
-19	- Post-Chorus:	Dm	   Du und ich		                          Am  F  C	und sing dabei von dir
-20		              C    F   Em  F	es ging so nicht	- Post-Chorus:	Dm	   Du und ich
-21	- Verse:	 C	Du wolltest alles wissen		              C    F   Em  F	es ging so nicht
-22		   F	und das hat mich vertrieben	- Verse:	 C	Du wolltest alles wissen
-23		Em	eigentlich dich		   F	und das hat mich vertrieben
-24		              F	Du bist nicht länger geblieben		Em	eigentlich dich
-25		     Em	bei mir		              F	Du bist nicht länger geblieben
-26		                         F	und so sitze ich um zu lieben		     Em	bei mir
-27		            Em          Dm	lieber Barfuß am Klavier		                         F	und so sitze ich um zu lieben
-28	- Chorus:	Am   F           C	Ich sitze schon wieder		            Em          Dm	lieber Barfuß am Klavier
-29		Am  F         C	Barfuß am Klavier	- Chorus:	Am   F           C	Ich sitze schon wieder
-30		Am          F      C	Ich träume Liebeslieder		Am  F         C	Barfuß am Klavier
-31		                          Am  F  C	und sing dabei von dir		Am          F      C	Ich träume Liebeslieder
-32	- Post-Chorus:	Dm	   Du und ich		                          Am  F  C	und sing dabei von dir
-33		                   C  F Dm F	wir waren zu wenig	- Post-Chorus:	Dm	   Du und ich
-34	> Solo: 	( C  Dm Em F C F Em  F )			                   C  F Dm F	wir waren zu wenig
-35	- Chorus:	Am   F           C	Ich sitze schon wieder	> Solo: 	( C  Dm Em F C F Em  F )	
-36		Am  F         C	Barfuß am Klavier	- Chorus:	Am   F           C	Ich sitze schon wieder
-37		Am          F        C	und träum dabei von Dir		Am  F         C	Barfuß am Klavier
-38		Am          F        C	ich träum dabei von Dir		Am          F        C	und träum dabei von Dir
-39		Am          F        C	ich träum dabei von Dir		Am          F        C	ich träum dabei von Dir
-40		Am          F        C	und träum dabei von Dir		Am          F        C	ich träum dabei von Dir
+order	title	last_comment	last_chord	last_lyric	comment	chord	lyric
+0	Barfuß am Klavier	[First Line]			> Intro: 	Am F C	
+1	Barfuß am Klavier	> Intro: 	Am F C		- Chorus:	Am   F           C	Ich sitze schon wieder
+2	Barfuß am Klavier	- Chorus:	Am   F           C	Ich sitze schon wieder		Am  F         C	Barfuß am Klavier
+3	Barfuß am Klavier		Am  F         C	Barfuß am Klavier		Am          F      C	Ich träume Liebeslieder
+4	Barfuß am Klavier		Am          F      C	Ich träume Liebeslieder		                          Am  F  C	und sing dabei von dir
+5	Barfuß am Klavier		                          Am  F  C	und sing dabei von dir	- Verse:	Dm	Du und ich,
+6	Barfuß am Klavier	- Verse:	Dm	Du und ich,		                    C	wir waren wunderlich
+7	Barfuß am Klavier		                    C	wir waren wunderlich		           F	Nicht für mich
+8	Barfuß am Klavier		           F	Nicht für mich		                 Em	für die, die es störte
+9	Barfuß am Klavier		                 Em	für die, die es störte		                     F	wenn man uns nachts hörte
+10	Barfuß am Klavier		                     F	wenn man uns nachts hörte		             C                        F	Ich hab mit dir gemeinsam einsam rumgesessen und geschwiegen
+11	Barfuß am Klavier		             C                        F	Ich hab mit dir gemeinsam einsam rumgesessen und geschwiegen		     Em                             F	ich erinnere mich am besten ans gemeinsam einsam liegen
+12	Barfuß am Klavier		     Em                             F	ich erinnere mich am besten ans gemeinsam einsam liegen		       C	jeden morgen
+13	Barfuß am Klavier		       C	jeden morgen		     F	danach bei dir
+14	Barfuß am Klavier		     F	danach bei dir		Em                      F	   du nackt im bett und ich barfuß am Klavier
+15	Barfuß am Klavier		Em                      F	   du nackt im bett und ich barfuß am Klavier	- Chorus:	Am   F           C	Ich sitze schon wieder
+16	Barfuß am Klavier	- Chorus:	Am   F           C	Ich sitze schon wieder		Am  F         C	Barfuß am Klavier
+17	Barfuß am Klavier		Am  F         C	Barfuß am Klavier		Am          F      C	Ich träume Liebeslieder
+18	Barfuß am Klavier		Am          F      C	Ich träume Liebeslieder		                          Am  F  C	und sing dabei von dir
+19	Barfuß am Klavier		                          Am  F  C	und sing dabei von dir	- Post-Chorus:	Dm	   Du und ich
+20	Barfuß am Klavier	- Post-Chorus:	Dm	   Du und ich		              C    F   Em  F	es ging so nicht
+21	Barfuß am Klavier		              C    F   Em  F	es ging so nicht	- Verse:	 C	Du wolltest alles wissen
+22	Barfuß am Klavier	- Verse:	 C	Du wolltest alles wissen		   F	und das hat mich vertrieben
+23	Barfuß am Klavier		   F	und das hat mich vertrieben		Em	eigentlich dich
+24	Barfuß am Klavier		Em	eigentlich dich		              F	Du bist nicht länger geblieben
+25	Barfuß am Klavier		              F	Du bist nicht länger geblieben		     Em	bei mir
+26	Barfuß am Klavier		     Em	bei mir		                         F	und so sitze ich um zu lieben
+27	Barfuß am Klavier		                         F	und so sitze ich um zu lieben		            Em          Dm	lieber Barfuß am Klavier
+28	Barfuß am Klavier		            Em          Dm	lieber Barfuß am Klavier	- Chorus:	Am   F           C	Ich sitze schon wieder
+29	Barfuß am Klavier	- Chorus:	Am   F           C	Ich sitze schon wieder		Am  F         C	Barfuß am Klavier
+30	Barfuß am Klavier		Am  F         C	Barfuß am Klavier		Am          F      C	Ich träume Liebeslieder
+31	Barfuß am Klavier		Am          F      C	Ich träume Liebeslieder		                          Am  F  C	und sing dabei von dir
+32	Barfuß am Klavier		                          Am  F  C	und sing dabei von dir	- Post-Chorus:	Dm	   Du und ich
+33	Barfuß am Klavier	- Post-Chorus:	Dm	   Du und ich		                   C  F Dm F	wir waren zu wenig
+34	Barfuß am Klavier		                   C  F Dm F	wir waren zu wenig	> Solo: 	( C  Dm Em F C F Em  F )	
+35	Barfuß am Klavier	> Solo: 	( C  Dm Em F C F Em  F )		- Chorus:	Am   F           C	Ich sitze schon wieder
+36	Barfuß am Klavier	- Chorus:	Am   F           C	Ich sitze schon wieder		Am  F         C	Barfuß am Klavier
+37	Barfuß am Klavier		Am  F         C	Barfuß am Klavier		Am          F        C	und träum dabei von Dir
+38	Barfuß am Klavier		Am          F        C	und träum dabei von Dir		Am          F        C	ich träum dabei von Dir
+39	Barfuß am Klavier		Am          F        C	ich träum dabei von Dir		Am          F        C	ich träum dabei von Dir
+40	Barfuß am Klavier		Am          F        C	ich träum dabei von Dir		Am          F        C	und träum dabei von Dir

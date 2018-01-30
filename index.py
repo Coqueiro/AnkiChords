@@ -5,12 +5,13 @@ raw_df = pd.read_csv(title + '.txt', sep='\n',
                      names=['line'], comment='#')
 
 music_df = pd.DataFrame(
-    data=None, columns=['comment', 'chord', 'lyric',
-                        'last_comment', 'last_chord', 'last_lyric'])
+    data=None, columns=['title',
+                        'last_comment', 'last_chord', 'last_lyric',
+                        'comment', 'chord', 'lyric'])
 
 comment = chord = lyric = None
 has_chord = has_lyric = True
-music_line = {'comment': None, 'chord': None, 'lyric': None}
+music_line = {'comment': '[First Line]', 'chord': None, 'lyric': None}
 
 for row in raw_df.iterrows():
     if has_chord:
@@ -27,9 +28,11 @@ for row in raw_df.iterrows():
         has_lyric = False
     if not has_lyric and not has_chord:
         music_df = music_df.append(
-            {'comment': comment, 'chord': chord, 'lyric': lyric,
-             'last_comment': music_line['comment'], 'last_chord': music_line['chord'],
-             'last_lyric': music_line['lyric']}, ignore_index=True)
+            {'title': title,
+             'last_comment': music_line['comment'],
+             'last_chord': music_line['chord'],
+             'last_lyric': music_line['lyric'],
+             'comment': comment, 'chord': chord, 'lyric': lyric}, ignore_index=True)
         music_line = {'comment': comment, 'chord': chord, 'lyric': lyric}
         comment = chord = lyric = None
         has_chord = has_lyric = True

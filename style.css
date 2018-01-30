@@ -1,0 +1,27 @@
+.card {
+  background-color: white;
+  color: black;
+  font-family: Courier New;
+  font-size: 16px;
+  text-align: center;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.lines {
+  text-align: left;
+}
+
+.cloze {
+  color: blue;
+  text-align: left;
+  font-weight: bold;
+}
+
+.title {
+  font-size: small;
+  text-align: center;
+}

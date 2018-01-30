@@ -4,9 +4,9 @@
 
 :white_check_mark: Creating organized file for each line of the lyric
 
-:negative_squared_cross_mark: Creating organized file for card creating with Anki
+:white_check_mark: Creating organized file for card creating with Anki
 
-:negative_squared_cross_mark: Creating card model
+:white_check_mark: Creating card model
 
 :negative_squared_cross_mark: Organization and practicality
 
