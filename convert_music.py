@@ -22,7 +22,7 @@ def convert_music(title):
                 comment = row[1][0]
                 has_lyric = False
             else:
-                chord = row[1][0]
+                chord = row[1][0].replace(' ', '&nbsp;')
                 has_chord = False
         elif has_lyric:
             lyric = row[1][0]
@@ -39,4 +39,4 @@ def convert_music(title):
             has_chord = has_lyric = True
 
     music_df.index.name = 'order'
-    music_df.to_csv('music_tsv/' + title + '.tsv', sep='\t')
+    music_df.to_csv('music_tsv/' + title + '.tsv', header=False, sep='\t')
