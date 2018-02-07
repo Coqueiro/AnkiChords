@@ -1,4 +1,4 @@
-from convert_music import convert_music
+from tools import convert_music
 
 for title in ['Barfuß am Klavier',
               'Can\'t Help Falling In Love',

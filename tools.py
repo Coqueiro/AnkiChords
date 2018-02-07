@@ -1,6 +1,5 @@
 import pandas as pd
 
-
 def convert_music(title):
     raw_df = pd.read_csv('music/' + title + '.txt', sep='\n',
                          names=['line'], comment='#')
@@ -8,7 +7,7 @@ def convert_music(title):
     music_df = pd.DataFrame(
         data=None, columns=['title',
                             'last_comment', 'last_chord', 'last_lyric',
-                            'comment', 'chord', 'lyric'])
+                            'comment', 'chord', 'lyric', 'images'])
 
     comment = chord = lyric = None
     has_chord = has_lyric = True
@@ -28,15 +27,32 @@ def convert_music(title):
             lyric = row[1][0]
             has_lyric = False
         if not has_lyric and not has_chord:
+            images = union_lists(chords_list(music_line['chord']),
+                                 chords_list(chord))
             music_df = music_df.append(
                 {'title': title,
                  'last_comment': music_line['comment'],
                  'last_chord': music_line['chord'],
                  'last_lyric': music_line['lyric'],
-                 'comment': comment, 'chord': chord, 'lyric': lyric}, ignore_index=True)
+                 'comment': comment, 'chord': chord, 'lyric': lyric,
+                 'images': chord_images(images)}, ignore_index=True)
             music_line = {'comment': comment, 'chord': chord, 'lyric': lyric}
             comment = chord = lyric = None
             has_chord = has_lyric = True
 
     music_df.index.name = 'order'
-    music_df.to_csv('music_tsv/' + title + '.tsv', header=False, sep='\t')
+    music_df.to_csv('music_tsv/' + title + '.tsv', 
+                    header=False, sep='\t', encoding='utf-8')
+
+def union_lists(first_list, second_list):
+    return list(filter(None, first_list + list(set(second_list) - set(first_list))))
+    
+def chords_list(chord_text):
+    return (chord_text if chord_text else '').split('&nbsp;')
+
+def chord_images(chords):
+    html_code = ''
+    for chord in chords:
+        html_code = html_code + '<img src=' + chord + '.png>'
+    return html_code
+    
