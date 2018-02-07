@@ -8,9 +8,9 @@
 
 :white_check_mark: Creating card model
 
-:negative_squared_cross_mark: Create default chords dictionary
+:white_check_mark: Create default chords dictionary
 
-:negative_squared_cross_mark: Including default chords (needs to bulk import images using this add-on: https://ankiweb.net/shared/info/1531997860)
+:white_check_mark: Including default chords (needs to bulk import images using this add-on: https://ankiweb.net/shared/info/1531997860)
 
 :negative_squared_cross_mark: Organization and practicality
 
