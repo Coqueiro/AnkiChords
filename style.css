@@ -25,3 +25,14 @@ p {
   font-size: small;
   text-align: center;
 }
+
+.image {
+  visibility: hidden;
+  position: fixed;
+  bottom: 0px;
+  left: 20%;
+}
+  
+.chord:hover + .image {
+  visibility: visible;
+}
