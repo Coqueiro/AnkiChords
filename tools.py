@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 
 def convert_music(title):
     raw_df = pd.read_csv('music/' + title + '.txt', sep='\n',
@@ -7,7 +8,7 @@ def convert_music(title):
     music_df = pd.DataFrame(
         data=None, columns=['title',
                             'last_comment', 'last_chord', 'last_lyric',
-                            'comment', 'chord', 'lyric', 'images'])
+                            'comment', 'chord', 'lyric'])
 
     comment = chord = lyric = None
     has_chord = has_lyric = True
@@ -21,21 +22,18 @@ def convert_music(title):
                 comment = row[1][0]
                 has_lyric = False
             else:
-                chord = row[1][0].replace(' ', '&nbsp;')
+                chord = add_image(row[1][0])
                 has_chord = False
         elif has_lyric:
             lyric = row[1][0]
             has_lyric = False
         if not has_lyric and not has_chord:
-            images = union_lists(chords_list(music_line['chord']),
-                                 chords_list(chord))
             music_df = music_df.append(
                 {'title': title,
                  'last_comment': music_line['comment'],
                  'last_chord': music_line['chord'],
                  'last_lyric': music_line['lyric'],
-                 'comment': comment, 'chord': chord, 'lyric': lyric,
-                 'images': chord_images(images)}, ignore_index=True)
+                 'comment': comment, 'chord': chord, 'lyric': lyric}, ignore_index=True)
             music_line = {'comment': comment, 'chord': chord, 'lyric': lyric}
             comment = chord = lyric = None
             has_chord = has_lyric = True
@@ -44,15 +42,14 @@ def convert_music(title):
     music_df.to_csv('music_tsv/' + title + '.tsv', 
                     header=False, sep='\t', encoding='utf-8')
 
-def union_lists(first_list, second_list):
-    return list(filter(None, first_list + list(set(second_list) - set(first_list))))
-    
-def chords_list(chord_text):
-    return (chord_text if chord_text else '').split('&nbsp;')
+def generate_spans(chord):
+    chord_span = '<span_class=chord>{}</span>'.format(chord)
+    image_span = '<span_class=image><img_src={}.png></span>'.format(chord)
+    return chord_span + image_span
 
-def chord_images(chords):
-    html_code = ''
-    for chord in chords:
-        html_code = html_code + '<img src=' + chord + '.png>'
-    return html_code
+def add_image(chord_text):
+    spans = re.sub(r'\w+', lambda x: generate_spans(x.group()), chord_text)
+    spans = spans.replace(' ', '&nbsp;')
+    spans = spans.replace('_', ' ')
+    return spans
     
