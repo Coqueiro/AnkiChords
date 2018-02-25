@@ -1,5 +1,7 @@
 # AnkiChords
 
+# Updates
+
 ## Stand-alone script
 
 :white_check_mark: Creating organized file for each line of the lyric
@@ -18,6 +20,21 @@
 
 ...
 
-## References
+# How to use
+
+*Content in progress...*
+
+## Note Type
+
+Order
+Title
+Last_Comment
+Last_Chord
+Last_Lyric
+Comment
+Chord
+Lyric
+
+# References
 
 [Effective Learning: Twenty Rules of Formulating Knowledge, by Dr Piotr Wozniak](https://www.supermemo.com/en/articles/20rules)

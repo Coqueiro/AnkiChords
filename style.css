@@ -28,11 +28,22 @@ p {
 
 .image {
   visibility: hidden;
+  height: 50%;
+  width: 50%;
   position: fixed;
   bottom: 0px;
   left: 20%;
 }
-  
+
+.chord {
+  color: #ff3300;
+}
+
+.chord:hover {
+  background-color: #ff3300;
+  color: white;
+ }
+
 .chord:hover + .image {
   visibility: visible;
 }
